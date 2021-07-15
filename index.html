@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>M2 D9 HW</title>
+    <style>
+
+   .album-container{
+     text-align: center;
+     padding-bottom: 1em;
+     margin: 1em;
+   }
+   
+   .album-cover{
+     
+     max-width: 100%; 
+     
+     height: auto;
+   }
+   
+   .album-title{
+     margin-top: 0.50em;
+     margin-bottom: 0.25em;
+     font-size: 1.3em;
+   }
+   
+   nav {
+     height: 7vh;
+   }
+   
+   #honorouble-mentions {
+     
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       text-transform: lowercase;
+       color: #d1d1d1;
+       
+       font-weight: 900;
+           
+   }
+   
+   </style>
+  </head>
+  <body>
+    <body>
+
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">WAKO MUSIC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item d.none">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- M2 D9 EXERCISE 1
+                Create a Jumbotron section with a quick explanation / image of the website.
+                Make it appear with a fade-in animation effect when the page loads.
+            -->
+
+          <div class="jumbotron jumbotron-fluid .fade-in">
+            <div class="container">
+              <h1 class="display-4">WELCOME TO WAKO MUSIC</h1>
+              <p class="lead">A short and sweet overview of the sounds I'm feeling right now.</p>
+            </div>
+          </div>
+
+           <!-- M2 D9 EXERCISE 2
+        Use the Bootstrap Card to contain every album in the favorite list.
+        Use the elements of a card to display nicely the album information such as album title, artist, year, etc..
+    -->
+        
+        <div class="col-12">
+          <h1 class="text-center my-4">A few of my favourite sounds</h1>
+        </div>
+        <section class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="col mb-4">
+               <div class="card">
+           <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Konnichiwa_by_Skepta_cover.jpg" class="img-fluid"
+                class="card-img-top" alt="KONICHIWA album cover">
+                     <div class="card-body">
+                       <h5 class="card-title">KONICHIWA</h5>
+                       <p class="card-text">Skepta's most fiery album to date. And with 5 years separating it from his last LP, it's both a meditation on fame and a victory lap.</p>
+                       <p class="card-text">
+                           <ul class="list-unstyled">
+                               <li>
+                                   Skepta
+                               </li>
+                               <li>
+                                   2016
+                               </li>
+                           </ul>
+                       </p>
+                    </div>
+                </div>
+            </div>
+                 <div class="col mb-4">
+                   <div class="card" class="album-cover">
+                     <img src="https://media.pitchfork.com/photos/5f3fefd49d8baa128c4383d9/1:1/w_600/apollo_fireboy%20dml.jpg"
+                       class="card-img-top" alt="APOLLO album cover">
+                     <div class="card-body">
+                       <h5 class="card-title">APOLLO</h5>
+                       <p class="card-text">On Apollo, Fireboy DML and his silky voice fold a diverse sonic pallete into a sensual and compelling masterpiece.</p>
+                       <p class="card-text">
+                        <ul class="list-unstyled">
+                            <li>
+                                Fireboy DML
+                            </li>
+                            <li>
+                                2020
+                            </li>
+                        </ul>
+                    </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col mb-4">
+                   <div class="card" class="album-cover">
+                     <img src="https://static.metacritic.com/images/products/music/1/fa7c0f06c906afa821fc713dbc1c2be3.jpg"
+                     class="img-fluid" class="card-img-top" alt="Ghetts album cover">
+                     <div class="card-body">
+                       <h5 class="card-title">CONFLICT OF INTEREST</h5>
+                       <p class="card-text">All sides that make the man are laid bare for the first time. As controversy, commercial limitation and censorship caught up with the grime's first wave, Ghetts was compelled to reclaim authorship of his story.</p>
+                       <p class="card-text">
+                        <ul class="list-unstyled">
+                            <li>
+                                Ghetts
+                            </li>
+                            <li>
+                                2021
+                            </li>
+                        </ul>
+                    </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col mb-4">
+                   <div class="card" class="album-cover">
+                     <img src="https://upload.wikimedia.org/wikipedia/en/e/ee/Chris_Brown_-_Heartbreak_on_a_Full_Moon.png" class="img-fluid"
+                      class="card-img-top" alt="Chris Brown album cover">
+                     <div class="card-body">
+                       <h5 class="card-title">HEARTBREAK ON A FULL MOON</h5>
+                       <p class="card-text">Chris Brown's eight record includes 45 tracks...just in case we forgot how hard this man works.</p>
+                       <p class="card-text">
+                        <ul class="list-unstyled">
+                            <li>
+                                Chris Brown
+                            </li>
+                            <li>
+                                2017
+                            </li>
+                        </ul>
+                    </p>
+                     </div>
+                   </div>
+                 </div>
+               </section>
+                
+            
+           <!-- EXERCISE 4
+        Create a section for the album review.
+        Pick one of your fav albums, and create a section with:
+        - Cover
+        - Title
+        - Band
+        - Lenght
+        - Genre
+        - Tracklist
+        - ... And whatever you think it's interesting about it!
+        -->
+        
+        <hr>
+        
+        <div class="col-12">
+          <h1 class="text-center my-4">Album of the year</h1>
+            </div>
+        
+        <section id="album-of-the-year">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                 <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Olamide_Carpe.jpeg" class="img-fluid">
+                   </div>
+                    <div class="col-12 col-md-8">
+                      <div class="d-flex flex-column justify-content-center h-100">
+                        <h4>CARPE DIEM</h4>
+                          <div>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+          <!-- EXERCISE 5
+        Worst album list! Find out the music you don't really like or you find overrated and list it
+        in this "hall of shame" chart!
+        -->
+        
+        
+        <section id="wall-of-shame">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-center my-4">Wall of shame</h1>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <div class="album-container">
+                      <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Recovery_Album_Cover.jpg" class="img-fluid">
+                        <h4 class="album-title">Recovery</h4>
+                          <span>Very dissapointing</span>
+                      </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                      <div class="album-container">
+                          <img src="https://upload.wikimedia.org/wikipedia/en/4/42/David_Guetta_-_Nothing_but_the_Beat.png" class="img-fluid">
+                          <h4 class="album-title">Nothing But The Beat</h4>
+                          <span>Not a fan</span>
+                      </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                      <div class="album-container">
+                        <img src="https://placehold.it/250" class="img-fluid">
+                          <h4 class="album-title">Terrible Album #3</h4>
+                          <span>This album is terrible. Reason is pending...</span>
+                      </div>
+                  </div>
+              </div>
+          </div>    
+        </section>
+        
+           <!-- EXERCISE 6
+        Do you have any musician / band you admire or you are fan of?
+        This section is dedicated to him / her / them!
+        Feel free to experiment in this part of the page.
+        -->
+        
+        <hr>
+        
+        
+          
+           
+            <!-- EXERCISE 7
+        Just covers!
+        Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+        Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+        
+        <section id="tapestry">
+                
+          <div class="container">
+              <div class="row py-5">
+                  <div class="col-12">
+                      <h1 class="text-center">Tapestry</h1>
+                  </div>
+                  
+                  <div class="col-12 album-tapestry">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+                      <img src="https://m.media-amazon.com/images/I/51xBRCUkIRL._SS500_.jpg" class="img-fluid squared">
+        
+                  </div>
+              </div>
+          </div>
+              
+        </section>
+    
+        <!-- EXERCISE 3
+            Foreach album in the favorite list, place a badge on top of it with the genre of the album
+        -->
+    
+        <!-- EXERCISE 4
+            Create a section with an album tracklist inside a Bootstrap table.
+            The row colors of the table must be alternated.
+    
+            There should be a column for the track order number, one for the title and one for the track duration.
+            (If you want, you can also add extra columns)
+        -->
+    
+        <!-- EXERCISE 5
+            Add a DELETE bootstrap button at the end of each row of the tracklist. 
+            Attach the functionality to remove its row when it gets clicked.  
+    
+            ##EXTRA##
+            Make only one button visible at a time, for each row, when the single row gets hovered. 
+            Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
+        -->
+    
+        <!-- EXERCISE 6
+            Add an "Add Track" button under the tracklist of the album. 
+            It should have a nice shadow transition when it gets hovered (with the box-shadow property) to look like 
+            the button was elevating itself every time the user hovers onto it.        
+        -->
+    
+        <!-- EXERCISE 7
+            On the click of "Add Track" button, a modal should appear.
+            (check in the documentation the modal+button example)
+            
+            The modal shall contain input fields with (avoid using a <form>):
+            - Track number
+            - Track title
+            - Track duration
+            - Track featuring
+            - Live Track (checkbox)
+    
+            The fields should be inside an Input Group and divided in 2 columns.
+        -->
+    
+        <!-- EXERCISE 8
+            The modal should contain 2 buttons at the bottom:
+            - Add => Adds a new track in the tracklist with the data of the input fields.
+            - Close => closes the modal
+    
+            https://getbootstrap.com/docs/4.6/components/alerts/
+            [EXTRA] Make the message disappear after 5 seconds
+            https://www.w3schools.com/jsref/met_win_settimeout.asp
+        -->
+    
+        <!-- EXERCISE 8
+            Alert the user with a success message when the track gets added, or when a track gets deleted.
+         -->
+    
+    
+        <!-- ############### -->
+        <!-- ###  EXTRA  ### -->
+        <!-- ############### -->
+    
+        <!-- EXERCISE 9
+             All the field (except for Feat. and Live Track) are required fields and require validation.
+             If the user clicks on the Add button and some fields are empty, a warning alert must be shown
+         -->
+    
+        <!-- EXERCISE 10
+            Make sure the "Close" button clears out the input fields AND closes the modal
+         -->
+    
+        <!-- EXERCISE 11
+            Considering the "Add Track" functionality that you've created on ex. 8: 
+             - The new list-element added to the list should appear with a fade-in effect
+         -->
+    
+        <!-- EXERCISE 12
+            Considering the button you've created in ex. 5 that deletes the row:
+            Add a fade-out effect to the row before it gets removed, using a CSS transition effect
+        -->
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
