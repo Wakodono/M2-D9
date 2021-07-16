@@ -1,0 +1,89 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   
+    background-attachment: fixed;
+    color: rgb(8, 8, 8);
+  }
+
+section {
+    min-height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+/* EX 1 */
+
+#jumbo {
+    animation: fade-in 4s 1s both;
+  }
+
+  .bg-concert {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  /* #jumbo-intro {
+    animation: fade-in 4s 1s both;
+  }
+  
+  .bg-intro {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+  } */
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.album-container{
+     text-align: center;
+     padding-bottom: 1em;
+     margin: 1em;
+   }
+   
+   .album-cover{
+     
+     max-width: 100%; 
+     
+     height: auto;
+   }
+   
+   .album-title{
+     margin-top: 0.50em;
+     margin-bottom: 0.25em;
+     font-size: 1.3em;
+   }
+   
+   nav {
+     height: 7vh;
+   }
+   
+   #honorouble-mentions {
+     
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       text-transform: lowercase;
+       color: #d1d1d1;
+       
+       font-weight: 900;
+           
+   }

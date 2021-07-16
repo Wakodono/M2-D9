@@ -8,46 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="style.css">
     <title>M2 D9 HW</title>
-    <style>
-
-   .album-container{
-     text-align: center;
-     padding-bottom: 1em;
-     margin: 1em;
-   }
    
-   .album-cover{
-     
-     max-width: 100%; 
-     
-     height: auto;
-   }
-   
-   .album-title{
-     margin-top: 0.50em;
-     margin-bottom: 0.25em;
-     font-size: 1.3em;
-   }
-   
-   nav {
-     height: 7vh;
-   }
-   
-   #honorouble-mentions {
-     
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       text-transform: lowercase;
-       color: #d1d1d1;
-       
-       font-weight: 900;
-           
-   }
-   
-   </style>
   </head>
   <body>
     <body>
@@ -60,16 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">Favourite sounds <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item d.none">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Album of the year</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#">Wall of shame</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Something</a>
                 </li>
               </ul>
             </div>
@@ -80,13 +43,28 @@
                 Make it appear with a fade-in animation effect when the page loads.
             -->
 
-          <div class="jumbotron jumbotron-fluid .fade-in">
+          <section id="jumbo" class="position-relative">
+              <img class="bg-concert" src="https://minnesota.cbslocal.com/wp-content/uploads/sites/15909630/2015/02/458791316.jpg?w=1024&h=576&crop=1">
+              <div class="container">
+                  <div class="jumbotron bg-transparent">
+                  <h1 class="display-4">WELCOME TO WAKO MUSIC</h1>
+                  <p class="lead">A short and sweet overview of the sounds I'm feeling right now.</p>
+                </div>
+              </div>
+          </section>
+        
+          <!-- <section id="jumbo-intro" class="position-relative">
+            <img class="bg-intro" src="assets/pexels-sebastian-ervi-1763075.jpg">
             <div class="container">
-              <h1 class="display-4">WELCOME TO WAKO MUSIC</h1>
-              <p class="lead">A short and sweet overview of the sounds I'm feeling right now.</p>
+                <div class="jumbotron bg-transparent">
+                    <h1 class="display-4">Hello, world!</h1>
+                    <p class="lead">In this webpage you'll see some of my favourite music.</p>
+                    <hr class="my-4">
+                    <p>You should totally check it out!</p>
+                </div>
+    
             </div>
-          </div>
-
+        </section> -->
            <!-- M2 D9 EXERCISE 2
         Use the Bootstrap Card to contain every album in the favorite list.
         Use the elements of a card to display nicely the album information such as album title, artist, year, etc..
